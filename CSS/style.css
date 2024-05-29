@@ -561,6 +561,16 @@ input[id="email"]{
   margin: 20px auto;
 }
 
+.patronage{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: plum;
+  align-items: center;
+  padding: 20px;
+  font-weight: bold;
+}
+
 
 /* footer styling */
 
