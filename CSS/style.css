@@ -1,0 +1,802 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:"width" 100;
+  /* margin: auto;
+  padding: 30px; */
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  width: 100%;
+  padding: 30px;
+  /* border: 1px solid red; */
+}
+
+img{
+  width: 100px;
+  min-width: 100px;
+  /* padding-left: 20px; */
+}
+
+.logo{
+  width:100%;
+}
+
+.nav-link, .menu{
+   display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+ul a{
+  text-decoration: none;
+  color: purple;
+}
+
+ul a:hover{
+  text-decoration: none;
+  color: plum;
+}
+
+.menu a{
+  text-decoration: none;
+  color: white;
+  background-color: purple;
+  padding: 5px;
+  border-radius: 7px;
+  width: 100px;
+  cursor: pointer;
+  text-align: center;
+  
+}
+
+.menu a:hover{
+  background-color: plum;
+  color: black;
+  cursor: pointer;
+}
+
+.hamburger{
+    cursor: pointer;
+}
+
+/* <!-- main section starts here --> */
+
+section{
+  width: 100%;
+  max-width: 1400px;
+  margin: 10px auto;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+   margin: 30px auto;
+   padding: 20px;
+}
+
+.hero-text > * {
+   margin-bottom: 15px;
+}
+.hero-text h1 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 50px;
+    color: purple;
+    line-height: 1.4em;
+}
+
+.hero-text p {
+  margin-bottom: 70px;
+  font-size: larger;
+}
+
+.learn-button a{
+   background-color: purple;
+   border: none;
+   color: #ffff;
+   padding: 15px 15px;
+   border-radius:7px;
+   width: 120px;
+   text-align: center;
+   cursor: pointer;
+}
+
+.learn-button a:hover{
+  background-color: plum;
+  color:black;
+  cursor: pointer;
+}
+  
+.hero-img img{ 
+  min-width:280px;
+  max-width: 800px;
+  margin: 20px 0 20px 0;
+  width: 100%;
+}
+
+ /* About section starts here  */
+ .about-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+  gap: 2em;
+  /* border: 1px solid red; */
+}
+
+.about-section .about-me h2{
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+h2{
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 30px;
+}
+
+.line{
+  width: 100px;
+  background-color: rgb(182, 3, 182);
+  /* margin: auto; */
+  color: purple;
+  height: 2px;
+  margin-top: 10px;
+  border-radius: 10px;
+  
+}
+
+
+/* Profile section starts here */
+.profile-section{
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  gap: 2em;
+ 
+
+}
+
+.profile-section .profile-text1 h3{
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 20px;
+  color: purple;
+}
+
+.profile-text1 .line{
+  margin: 20px 0px 20px 0px;
+}
+
+/* contact styling */
+.contact-me a{
+  background-color: purple;
+  border: none;
+  color: #ffff;
+  padding: 15px 15px;
+  border-radius:7px;
+  width: 120px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.contact-me a:hover{
+ background-color: plum;
+ color:black;
+ cursor: pointer;
+}
+
+.contact-me{
+  margin: 30px 0px;
+}
+
+.profile-img img{
+  min-width: 200px;
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Services section styling */
+.Services-section{
+  display: flex;
+  flex-direction:column;
+  justify-content: space-evenly;
+  padding: 30px;
+  gap: 1em;
+  background-color: rgb(253, 232, 253);
+ 
+}
+
+.Services-section .services h2 {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.services .line{
+  margin: 20px 0px 20px 0px;
+}
+
+.heading h5{
+  color: black;
+}
+.my-services {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column; 
+  width: 100%;
+  padding: 30px;
+  }
+
+.my-services .Service-sub .heading h4{
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.Service-sub{
+border-radius: 8px;
+background-color: #ffff;
+padding:20px;
+text-align: center;
+height: 350px;
+width: 300px;
+/* margin: 0px 0px 10px 0px; */
+}
+
+h4{
+  margin: 20px 0px 20px 0;
+}
+
+.heading{
+  width: fit-content;
+  margin: auto;
+}
+
+.heading h5{
+  margin: 20px 0px 20px 0;
+}
+
+
+/* Work video placeholder starts here */
+.work-video{
+    width: 100%;
+    /* max-width: 800px; */
+    height: 400px;
+    background-image: url('/images/Display\ Presentation\ Mockup.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    opacity: 0.8;
+     
+}
+
+/*Work experience section styling */
+.work-experience{
+  display: flex;
+  flex-direction:column;
+  justify-content: space-evenly;
+  padding: 30px;
+  background-color: rgb(255, 240, 255);
+   
+}
+
+.work-experience .work-main h2 {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.services .line{
+  margin: 20px 0px 20px 0px;
+}
+
+.work2{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 30px 0px; 
+  gap: 1em;
+
+}
+
+.work-sub1{
+  border-radius: 8px;
+  background-color: white;
+  width: 100%;
+  padding: 20px;
+  text-align: left;
+}
+
+.work-sub2{
+  border-radius: 8px;
+  background-color: white;
+  width: 100%;
+  padding:20px;
+  text-align: left;
+  margin: 30px 0px; 
+  }
+
+  .work2 .work-sub1 > a{
+    background-color: purple;
+    padding: 5px;
+    color: white;
+    font-size: small;
+    margin-top: 40px;
+    border-radius: 8px;
+  }
+  
+  .work-sub2 > a{
+  background-color: purple;
+  padding: 8px;
+  color: white;
+  font-size: small;
+  margin-top: 40px;
+  border-radius: 8px;
+}
+.work2 .work-sub1 > p{
+  margin-bottom: 20px;
+}
+
+.work-sub2 > p{
+  margin-bottom: 20px;
+}
+
+/*Portfolio styiling  */
+.portfolio{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  /* margin: auto; */
+  padding: 30px;
+  /* background-color: rgb(244, 236, 252); */
+  }
+
+.portfolio .portfolio-new .my-portfolio h2 {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.my-portfolio .line{
+  margin: 20px 0px 20px 0px;
+
+}
+
+.portfolio-new .my-portfolio{
+  align-items: center;
+  text-align: center;
+  }
+
+.portfolio-main {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  border: 1px solid black;
+  justify-content: space-around;
+  gap: 2em;  
+ }
+
+.portfolio-pics{
+  align-content: center;
+  margin: center;
+  width: 100%;
+  /* object-fit: fill; */
+  }
+
+  .portfolio-pics img{
+    width: 300px;
+  }
+
+
+
+/* Clients review */
+.clients-reviews{
+  display: flex;
+  flex-direction:column;
+  justify-content: space-evenly;
+  padding: 30px;
+  gap: 2em;
+  margin: auto;
+  width: 100%;
+  background-color: rgb(244, 236, 252);
+ 
+}
+
+.clients-reviews .clients h2 {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.clients .line{
+  margin: 20px 0px 20px 0px;
+}
+
+.client-img {
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  flex-direction: column; 
+  align-items: center;
+  gap: 2em;
+  }
+
+.client1 img{
+  border-radius: 50px;
+  border: 3px solid purple;
+ 
+  }
+
+.client1{
+  background-color: white;
+  border-radius: 8px;
+  margin: 0 10 0 10;
+  padding: 20px;
+  text-align: center;
+  height: 350px;
+  width: 300px;
+  text-align: center;
+}
+
+
+.client-img .client1 h5{
+  font-optical-sizing: auto;
+  font-style: normal;
+  margin-bottom: 15px;
+  color: black;
+}
+
+.Service-sub{
+border-radius: 8px;
+background-color: #ffff;
+padding:50px;
+text-align: center;
+/* width: 200px;
+height: 350px; */
+margin: 0px 0px 20px 0px;
+}
+
+h4{
+  margin: 20px 0px 20px 0;
+}
+
+.heading{
+  margin: auto;
+}
+
+.heading h5{
+  margin: 20px 0px 20px 0;
+}
+
+/* Contact form */
+.Contact-us{
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+  padding: 30px;
+  }
+
+.Contact-form .line{
+  margin: 20px 0px 20px 0px;
+  margin: auto;
+}
+
+.Contact-form{
+  text-align: center;
+}
+.email-button{
+  background-color: purple;
+  color: #ffff;
+  border: none;
+  height: 30px;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 10px 0px;
+}
+
+.email-button:hover{
+  background-color: plum;
+  color:black;
+}
+
+.Contact-form > p{
+  margin-bottom: 20px;
+}
+
+input[id="email"]{
+  width: 300px;
+  height: 30px;
+  margin: 20px auto;
+}
+
+
+/* footer styling */
+
+footer{
+  background-color: purple;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 200px;
+  padding: 30px;
+}
+
+h5{
+  color: white;
+  font-size: x-small;
+}
+
+.footer-section{
+  text-align:  center;
+}
+
+
+.last-footer{
+  display: flex;
+  flex: column;
+  justify-content: center;
+  text-align: center;
+  background-color: purple;
+  color: white;
+  font-size: x-small;
+  padding: 30px;
+}
+
+/* Media query : hero img, profile section, my services*/
+
+@media screen and (min-width:768px){
+  .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 30px auto;
+    padding: 20px;
+    
+  }
+
+  .hamburger{
+    display: none;
+  }
+
+  header{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    width: 100%;
+    padding: 30px;
+    /* border: 1px solid red; */
+  }
+
+  .nav-link, .menu{
+    display: flex;
+    justify-content: space-between;
+    
+  }
+
+  .nav-link ul li > a{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 20px;
+    font-size: large;
+  }
+
+  .menu{
+    margin-left: 20px;
+  }
+
+  .hero-section{
+    width: 60%;
+    align-content: center;
+  }
+
+  
+  .about-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 30px;
+    gap: 2em;
+    text-align: center;
+  }
+
+  .line{
+    width: 100px;
+    background-color: rgb(182, 3, 182);
+    margin: auto;
+    color: purple;
+    height: 2px;
+    margin-top: 20px;
+    border-radius: 10px;
+    
+  }
+
+  .profile-section{
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    gap: 2em;
+   
+  
+  }
+  
+  .profile-section .profile-text1 h3{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 20px;
+    color: purple;
+  }
+  
+  .profile-text1 .line{
+    margin: 20px 0px 20px 0px;
+  }
+
+.profile-text2{
+    align-self: center;
+}
+
+.services{
+  margin: auto;
+  text-align: center;
+}
+
+.services .line{
+  text-align: center;
+  margin: 20px auto;
+}
+
+  .my-services {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row; 
+    gap: 2em;
+    margin: 10px;
+    }
+
+    .work-main{
+      margin: auto;
+      text-align: center;
+    }
+
+    .work-experience{
+      display: flex;
+      flex-direction:column;
+      justify-content: space-evenly;
+      padding: 30px;
+      background-color: rgb(255, 240, 255);
+       
+    }
+    
+    .work2{
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      margin: 30px 0px; 
+      gap: 1em;
+      width: 100%;
+      padding: 30px;
+    
+    }
+
+    .wok-sec{
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      gap: 2em;
+      width: 100%;
+      padding: 70px 50px;
+      /* border: 1px solid green; */
+    
+    }
+    
+    .portfolio-new{
+      margin: auto;
+      text-align: center;
+    }
+
+    .portfolio-new .line{
+      text-align: center;
+      margin: 20px auto;
+    }
+
+    .clients{
+      margin: auto;
+      text-align: center;
+    }
+
+    .clients .line{
+      margin: 30px auto;
+      text-align: center;
+    }
+
+    .footer-section{
+      background-color: purple;
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: row;
+      height: 200px;
+      padding: 30px;
+      width: 100%;
+    }
+
+    .socials{
+      display: flex;
+      justify-content: space-evenly;
+      margin: 20px;
+      border: 1ps solid red;
+    }
+
+    .client-img{
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+    }
+
+}
+
+@media screen and (min-width:768px) and (max-width:1023px){
+
+  .nav-link, .menu{
+    display: none;
+  }
+
+  .hamburger{
+    display: block;
+  }
+}
+
+
