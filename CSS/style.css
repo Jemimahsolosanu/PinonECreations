@@ -117,9 +117,9 @@ section{
    background-color: purple;
    border: none;
    color: #ffff;
-   padding: 15px 15px;
+   padding: 20px 20px;
    border-radius:7px;
-   width: 120px;
+   width: 150px;
    text-align: center;
    cursor: pointer;
 }
@@ -220,8 +220,8 @@ h2{
 }
 
 .profile-img img{
-  min-width: 200px;
-  max-width: 400px;
+  min-width: 300px;
+  max-width: 500px;
   width: 100%;
 }
 
@@ -251,6 +251,8 @@ h2{
 
 .heading h5{
   color: black;
+  font-size:medium;
+  font-weight: lighter;
 }
 .my-services {
   display: flex;
@@ -308,8 +310,14 @@ h4{
     flex-direction: column;
     color: white;
     text-align: center;
-    opacity: 0.8;
+    /* opacity: 0.6; */
      
+}
+
+.video-text h5{
+  font-size:large;
+  font-weight: bold;
+  
 }
 
 /*Work experience section styling */
